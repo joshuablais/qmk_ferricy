@@ -18,9 +18,9 @@ enum custom_keycodes { M_EMAIL = SAFE_RANGE, M_LPRN, M_RPRN };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case W_A: case W_R: case W_I: case W_O:
-            return 230;
+            return 200;
         case S_S: case S_T: case S_N: case S_E:
-            return 185;
+            return 165;
         default:
             return TAPPING_TERM;
     }
@@ -29,9 +29,9 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case W_A: case W_R: case W_I: case W_O:
-            return 230;
+            return 200;
         case S_S: case S_T: case S_N: case S_E:
-            return 185;
+            return 165;
         default:
             return QUICK_TAP_TERM;
     }
