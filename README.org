@@ -1,0 +1,32 @@
+* Ferricy Layout
+
+This
+
+** You can use a nix-shell or guix shell for running qmk:
+#+begin_src bash
+nix-shell -p qmk
+#+end_src
+
+Then, get qmk running:
+
+#+begin_src bash
+qmk init
+
+# Hit Y to setup the ~/qmk_firmware directory
+  #+end_src
+
+You can clone this directory into:
+
+#+begin_src bash
+~/qmk_firmware/keyboards/ferris/keymaps/YOUR_NAME/
+#+end_src
+
+** Compiling the layout
+Because I am using [[https://github.com/0xCB-dev/0xCB-Helios][0xCB Helios]] controllers, the command is as follows:
+
+#+begin_src bash
+qmk flash -c -kb ferris/sweep -km joshua -e CONVERT_TO=helios --bootloader uf2-split-left
+qmk flash -c -kb ferris/sweep -km joshua -e CONVERT_TO=helios --bootloader uf2-split-right
+#+end_src
+
+run each command with each half plugged in seperately, and jump pins 3/4 (RST/GND) on the left of each controller (because controllers are facing down). The controller should then show up as a mass storage device and be able to accept the compiled key layout.
