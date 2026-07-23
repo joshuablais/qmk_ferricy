@@ -1,6 +1,6 @@
 * Ferricy Layout
 
-This
+This is my personal 34 key [[https://qmk.fm/][QMK]] layout for the [[https://github.com/icyphox/ferricy][Ferricy Keyboard]] ([[https://github.com/davidphilipbarr/sweep][Ferris sweep]] clone)
 
 ** You can use a nix-shell or guix shell for running qmk:
 #+begin_src bash
