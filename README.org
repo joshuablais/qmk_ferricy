@@ -1,3 +1,5 @@
+[[https://cella.b-cdn.net/joshblais/ferricy.jpeg]]
+
 * Ferricy Layout
 
 This is my personal 34 key [[https://qmk.fm/][QMK]] layout for the [[https://github.com/icyphox/ferricy][Ferricy Keyboard]] ([[https://github.com/davidphilipbarr/sweep][Ferris sweep]] clone)
