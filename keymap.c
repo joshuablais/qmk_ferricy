@@ -46,10 +46,6 @@ enum layers { _HOME, _NUM, _NAV };
 #define G_F6   HOME_L2(KC_F6)
 #define G_F7   HOME_L3(KC_F7)
 #define G_F8   HOME_L4(KC_F8)
-#define G_DOWN HOME_R1(KC_DOWN)
-#define G_UP   HOME_R2(KC_UP)
-#define G_RGHT HOME_R3(KC_RGHT)
-#define G_NO   HOME_R4(KC_NO)
 
 enum custom_keycodes { M_EMAIL = SAFE_RANGE };
 
@@ -99,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_NAV] = LAYOUT_split_3x5_2(
         KC_F1,  KC_F2,  KC_F3,  KC_F4,  M_EMAIL,    KC_NO,   KC_NO,   KC_NO,  KC_NO,   KC_NO,
-        G_F5,   G_F6,   G_F7,   G_F8,   KC_NO,      KC_LEFT, G_DOWN,  G_UP,   G_RGHT,  G_NO,
+        G_F5,   G_F6,   G_F7,   G_F8,   KC_NO,      KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT,  KC_NO,
         QK_BOOT, KC_F10, KC_F11, KC_F12, KC_PSCR,    KC_NO,   LCTL(KC_V), LALT(KC_V), KC_NO, QK_BOOT,
                         KC_NO, KC_TRNS,             KC_TRNS, KC_TRNS
     ),
